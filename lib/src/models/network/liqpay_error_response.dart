@@ -13,7 +13,7 @@ class LiqPayErrorResponse extends LiqPayResponse {
       LiqPayErrorResponse(
         json['result'] as String,
         json['status'] as String,
-        json['version'] as String,
+        json['version'].toString(),
         LiqPayAction.fromValue(json['action']),
         json['err_code'] as String?,
         json['err_description'] as String?,
